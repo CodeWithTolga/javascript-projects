@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% );
+}
+
+.container
+{
+    position: relative;
+    width: 480px;
+    height:300px;
+    /* background-color: #3b2424; */
+    padding: 5px;
+}
+.container .moon 
+{
+    position: relative;
+    inset:-10% 30%;
+    width:180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.container .moon::before
+{
+    position: absolute;
+    left: 70px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% );
+}
+.cloud-1 
+{
+    
+    position: absolute;
+    top: 28%;
+    left:15%;
+    width: 360px;
+    height: 100px;
+    background-color: #bcbbbb;
+    border-radius: 50px;
+}
+
+
+.cloud-1 :where(.small, .small-2) 
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #bcbbbb;
+    border-radius: 50%;
+}
+.cloud-1 .small-2
+{
+    left:calc(130px * 2);
+}
+.cloud-1 .middle 
+{
+    position: absolute;
+    top: -40px;
+    left: 35px;
+    width: 140px;
+    height:140px;
+    border-radius: 50%;
+    background-color: #bcbbbb;
+}
+.cloud-1 .big 
+{
+    position: absolute;
+    top: -80px;
+    left: 120px;
+    width: 180px;
+    height:180px;
+    border-radius: 50%;
+    background-color: #bcbbbb;
+}
+
+
+
+svg 
+{
+  position: relative;
+  top: 100%;
+  /* background-color: #fff; */
+}
+.sisliYol {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#sisliYol1 {
+  animation-name: sisliAnimasyon1;
+  transform: translate(0, 10px);
+}
+
+#sisliYol2 {
+  animation-name: sisliAnimasyon2;
+  transform: translate(0, 15px);
+}
+
+#sisliYol3 {
+  animation-name: sisliAnimasyon3;
+  transform: translate(0, 20px);
+}
+
+@keyframes sisliAnimasyon1 {
+    0%, 100% {
+        d: path("M10 50 C 40 10, 65 10, 95 50 S 150 90, 180 50");
+    }
+    50% {
+        d: path("M10 50 C 40 90, 65 90, 95 50 S 150 10, 180 50");
+    }
+}
+
+@keyframes sisliAnimasyon2 {
+    0%, 100% {
+        d: path("M10 150 C 40 110, 65 110, 95 150 S 150 190, 180 150");
+    }
+    50% {
+        d: path("M10 150 C 40 190, 65 190, 95 150 S 150 110, 180 150");
+    }
+}
+
+@keyframes sisliAnimasyon3 {
+    0%, 100% {
+        d: path("M10 250 C 40 210, 65 210, 95 250 S 150 290, 180 250");
+    }
+    50% {
+        d: path("M10 250 C 40 290, 65 290, 95 250 S 150 210, 180 250");
+    }
+}

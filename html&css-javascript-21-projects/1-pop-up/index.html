@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POP UP</title>
+</head>
+<body>
+      
+     <button type="button">button</button>
+
+     <div class="pop-up">
+         <div class="close">
+            <i class="fa-solid fa-xmark-circle"></i>
+         </div>
+         <div class="icon-box">
+            <i class="fa-solid fa-check"></i>
+         </div>
+         <span class="title">success</span>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores!
+            Lorem ipsum dolor sit amet 
+         </p>
+     </div>
+<script src="https://kit.fontawesome.com/79deaa698d.js" crossorigin="anonymous"></script>
+
+
+<script>
+     const button = document.querySelector("button");
+     const pop_up = document.querySelector(".pop-up");
+     const close_btn = pop_up.querySelector(".close");
+
+     button.addEventListener("click", () => {
+        pop_up.classList.add("active");
+     })
+     close_btn.addEventListener("click", () => {
+        pop_up.classList.remove("active");
+     }); 
+</script>
+</body>
+</html>

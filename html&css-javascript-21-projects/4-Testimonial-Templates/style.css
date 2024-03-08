@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container .card {
+  position: relative;
+  padding: 5px;
+  width: 380px;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2 0 0;
+  gap: 10px;
+  transition: 0.5s ease-in-out;
+}
+.container .card:hover {
+  flex: 2 0 150px;
+}
+.container .card .image {
+  position: relative;
+  top: -60px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 2px;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+.container .card .image:hover {
+  transform: scale(1.1);
+}
+.container .card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.container .card p {
+  cursor: default;
+  font-weight: 500;
+  color: #fff;
+}
+.card hr {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.card .footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card .footer .name {
+  width: 100%;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.card .footer .point-box {
+  width: 100%;
+  height: 50px;
+  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 15px;
+}
+.footer .point-box i {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #ffa200;
+}
+.card:hover .footer {
+  justify-content: space-between;
+}
+.card:hover .footer .point-box i {
+  animation: jump 0.8s linear forwards;
+  animation-delay: calc(1s * var(--time));
+}
+.card:hover .footer .name,
+.card:hover .footer .point-box {
+  flex: 2;
+}
+.card:hover .footer .point-box {
+  justify-content: flex-end;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(365deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}

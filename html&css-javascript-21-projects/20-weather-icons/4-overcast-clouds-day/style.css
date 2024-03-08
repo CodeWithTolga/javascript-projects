@@ -1,0 +1,250 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% );
+}
+
+.container .sun 
+{
+    position: relative;
+    inset: 25px 25%;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient( 179deg,  rgba(255,129,27,1) -27.5%, rgba(245,255,56,1) 94.7% );
+    border-radius: 50%;
+    /* border-radius: 15px; */
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    100%
+    {
+        transform: rotate(365deg);
+    }
+}
+
+.container .sun .line 
+{
+    position: absolute;
+    top: -44px;
+    left: 46%;
+    width: 10px;
+    height: 40px;
+    background-image: linear-gradient( 183.5deg,  rgba(244,173,6,1) 18.6%, rgba(229,251,31,1) 119.9% );
+    margin: 5px;
+    transform: rotate(calc(20deg * var(--rotate)));
+    transform-origin: 0 115px;
+    /* overflow: hidden; */
+    border-radius: 50px;
+}
+.container .sun .line::before
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    content:"";
+    animation: load 3s linear infinite;
+    background-image: linear-gradient( 109.6deg,  rgba(255,115,68,1) 11.2%, rgba(244,255,32,1) 100.6% );
+    border-radius: 50px;
+}
+@keyframes load {
+    100%{height: 100%;}
+}
+
+.container
+{
+    position: relative;
+    width: 480px;
+    height:300px;
+    /* background-color: #3b2424; */
+    padding: 5px;
+}
+
+/*Cloud-1*/
+.container .cloud
+{
+    position: absolute;
+    background-color: #515151;
+}
+
+.container .cloud-1
+{
+    top: 25px;
+    width: 210px;
+    height: 60px;
+    border-radius: 50px;
+    animation: move1 3s linear infinite;
+}
+@keyframes move1 {
+    0%
+    {
+        transform: translateX(10px);
+    }
+    50%
+    {
+        transform: translateX(50px);
+    }
+    100%
+    {
+        transform: translateX(10px);
+    }
+}
+.container .cloud-1 :where(.small, .small-2)
+{
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height:60px;
+    background-color: #515151;
+    border-radius: 50%;
+}
+.container .cloud-1 .small-2
+{
+    left:calc(75px * 2);
+}
+.container .cloud-1 .middle
+{
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+    width: 80px;
+    height: 80px;
+    background-color: #515151;
+    border-radius: 50%;
+}
+.container .cloud-1 .big
+{
+    position: absolute;
+    bottom: 0;
+    left:75px;
+    width: 110px;
+    height: 110px;
+    background-color: #515151;
+    border-radius: 50%;
+}
+
+
+/*Cloud-2*/
+
+.container .cloud-2
+{
+    right: 150px;
+    top:25%;
+    width: 150px;
+    height: 50px;
+    background-color: #515151;
+    border-radius: 50px;
+    animation: move2 3s linear infinite;
+}
+@keyframes move2 {
+    0%
+    {
+        transform: translateX(100px);
+    }
+    50%
+    {
+       transform: translateX(80px);
+    }
+    100%
+    {
+        transform: translateX(100px);
+    }
+}
+.container .cloud-2 :where(.small, .small-2) 
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #515151;
+}
+.container .cloud-2 .small-2
+{
+    left: calc(50px * 2);
+}
+.container .cloud-2 .middle
+{
+    position: absolute;
+    left: 25px;
+    top: -15px;
+    width: 65px;
+    height: 65px;
+    background-color: #515151;
+    border-radius: 50%;
+}
+.container .cloud-2 .big
+{
+    position: absolute;
+    left: 55px;
+    top: -25px;
+    width: 75px;
+    height: 75px;
+    background-color: #515151;
+    border-radius: 50%;
+}
+
+.container .cloud-3
+{
+    top: 47%;
+    width: 220px;
+    height: 70px;
+    border-radius: 50px;
+    animation: move3 4.5s linear infinite;
+}
+@keyframes  move3{
+    0%
+    {
+        transform: translateX(10px);
+    }
+    50%
+    {
+        transform: translateX(50px);
+    }
+    100%
+    {
+        transform: translateX(10px);
+    }
+}
+
+.container .cloud-3 :where(.small, .small-2)
+{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #515151;
+    border-radius: 50%;
+}
+.container .cloud-3 .small-2 
+{
+    left: calc(75px * 2);
+}
+.container .cloud-3 .big 
+{
+    position: absolute;
+    left: 40px;
+    top: -50px;
+    width: 120px;
+    height: 120px;
+    background-color:#515151;
+    border-radius: 50%;
+}
+.container .cloud-3 .middle 
+{
+    position: absolute;
+    left:calc(50px * 2);
+    top: -20px;
+    width: 90px;
+    height: 90px;
+    background-color:#515151;
+    border-radius: 50%;
+}

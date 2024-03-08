@@ -1,0 +1,92 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #454545;
+}
+.container 
+{
+    width: 600px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.container .step-progress
+{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    /* background-color:#787fff; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.step-progress .progress 
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.progress .progress-bar
+{
+    width:0%;
+    height: 100%;
+    background-color: #6e75ff;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+}
+.step-progress .step-box
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f7bb17;
+    border: 2px solid #fff;
+    z-index: 1;
+}
+.step-box span 
+{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+}
+.container .btn-box
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.btn-box button 
+{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.3rem;
+    color:#fff;
+    text-transform: capitalize;
+    background-color: #292929;
+    border-radius: 5px;
+}

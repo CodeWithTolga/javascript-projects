@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="side-bar">
+        <div class="hamburger">
+             <span></span>
+             <span></span>
+             <span></span>
+        </div>
+
+        <!-- HEADER -->
+        <div class="header">
+             <div class="image">
+                <img src="logo.png" alt="">
+             </div>
+             <span class="title hidden">coding art</span>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" id="src" class="hidden" placeholder="search">
+        </div>
+
+        <!-- CONTAİNER -->
+        <div class="container">
+            <ul class="boxes">
+                <li class="inner-box">
+                    <div class="header-title">
+                        <i class="fa-solid fa-home icon"></i>
+                        <span class="hidden">home</span>
+                        <i class="fa-solid fa-chevron-down arrow hidden"></i>
+                    </div>
+                    <ul class="inner-content hidden">
+                        <li>
+                             <a href="#">home page</a>
+                        </li>
+                        <li>
+                            <a href="#">about us </a>
+                        </li>
+                        <li>
+                            <a href="#">our services</a>
+                        </li>
+                        <li>
+                            <a href="#">communication</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="inner-box">
+                    <div class="header-title">
+                        <i class="fa-solid fa-chart-line icon"></i>
+                        <span class="hidden">dashboard</span>
+                        <i class="fa-solid fa-chevron-down arrow hidden"></i>
+                    </div>
+                    <ul class="inner-content hidden">
+                        <li>
+                             <a href="#">overview</a>
+                        </li>
+                        <li>
+                            <a href="#">sales</a>
+                        </li>
+                        <li>
+                            <a href="#">graphics</a>
+                        </li>
+                        <li>
+                            <a href="#">reports</a>
+                        </li>
+                        <li>
+                            <a href="#">settings</a>
+                        </li>
+                        <li>
+                            <a href="#">tasks</a>
+                        </li>
+                        <li>
+                            <a href="#">notifications</a>
+                        </li>
+                        <li>
+                            <a href="#">calendar</a>
+                        </li>
+                        <li>
+                            <a href="#">analyzes</a>
+                        </li>
+                        <li>
+                            <a href="#">messages</a>
+                        </li>
+                        <li>
+                            <a href="#">folders</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="inner-box">
+                    <div class="header-title">
+                        <i class="fa-solid fa-list-check icon"></i>
+                        <span class="hidden">tasks</span>
+                        <i class="fa-solid fa-chevron-down arrow hidden"></i>
+                    </div>
+                    <ul class="inner-content hidden">
+                        <li>
+                             <a href="#">project development</a>
+                        </li>
+                        <li>
+                            <a href="#">testing and verification</a>
+                        </li>
+                        <li>
+                            <a href="#">customer feedback</a>
+                        </li>
+                        <li>
+                            <a href="#">sprint planning</a>
+                        </li>
+                        <li>
+                            <a href="#">business processes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="inner-box">
+                    <div class="header-title">
+                        <i class="fa-solid fa-chart-pie icon"></i>
+                        <span class="hidden">reporting</span>
+                        <i class="fa-solid fa-chevron-down arrow hidden"></i>
+                    </div>
+                    <ul class="inner-content hidden">
+                        <li>
+                             <a href="#">sales reports</a>
+                        </li>
+                        <li>
+                            <a href="#">staff performance</a>
+                        </li>
+                        <li>
+                            <a href="#">the market research</a>
+                        </li>
+                        <li>
+                            <a href="#">budget analysis</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="inner-box">
+                    <div class="header-title">
+                        <i class="fa-solid fa-user icon"></i>
+                        <span class="hidden">users</span>
+                        <i class="fa-solid fa-chevron-down arrow hidden"></i>
+                    </div>
+                    <ul class="inner-content hidden">
+                        <li>
+                             <a href="#">user profile</a>
+                        </li>
+                        <li>
+                            <a href="#">account settings</a>
+                        </li>
+                        <li>
+                            <a href="#">change password</a>
+                        </li>
+                        <li>
+                            <a href="#">subscription information</a>
+                        </li>
+                        <li>
+                            <a href="#">messages</a>
+                        </li>
+                        <li>
+                            <a href="#">friends list</a>
+                        </li>
+                        <li>
+                            <a href="#">group memberships</a>
+                        </li>
+                        <li>
+                            <a href="#">special notifications</a>
+                        </li>
+                        <li>
+                            <a href="#">email</a>
+                        </li>
+                        <li>
+                            <a href="#">log out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+        <ul class="personal-box">
+            <li>
+                <i class="fa-regular fa-bell"></i>
+                <a href="#" class="text hidden">notifications</a>
+                <span class="count-text hidden">4</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-message"></i>
+                <a href="#" class="text hidden">support</a>
+            </li>
+            <li>
+                <label class="toggle-box"></label>
+                <span class="title hidden">setting</span>
+            </li>
+        </ul>
+    </div>
+<script src="https://kit.fontawesome.com/79deaa698d.js" crossorigin="anonymous"></script>
+
+
+<!-- https://dribbble.com/shots/18288223-Sidebar-navigation-Untitled-UI/attachments/13495815?mode=media -->
+</body>
+</html>

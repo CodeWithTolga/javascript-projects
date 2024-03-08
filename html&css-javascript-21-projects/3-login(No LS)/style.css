@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #474545;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+form {
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #292929; */
+  border-radius: 5px;
+  padding: 20px;
+  gap: 50px;
+  transition: 0.5s ease-in-out;
+}
+form .text-box {
+  position: relative;
+  width: 400px;
+  height: 60px;
+  /* background-color: #292929; */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+form .text-box label {
+  position: absolute;
+  left: 15px;
+  text-transform: capitalize;
+  color: #5291ff;
+  transform: translateY(0);
+  padding: 2px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+form .text-box label span {
+  display: inline-flex;
+  flex-direction: row;
+  transition: 0.3s ease;
+}
+form .text-box input:focus ~ label span,
+form .text-box input:valid ~ label span {
+  transform: translateY(-25px);
+  background-color: #474545;
+}
+
+form .text-box input {
+  outline: none;
+  width: calc(100% - 30px);
+  height: 100%;
+  border: 2px solid #5291ff;
+  background-color: transparent;
+  transition: 0.5s ease;
+  font-size: 15px;
+  font-weight: 500;
+  color: #5291ff;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+form .text-box input:focus {
+  border: 2px solid #fff;
+}
+form .text-box .alert-icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #c2c1c1; */
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+form .text-box .alert-icon.err {
+  opacity: 1;
+  pointer-events: auto;
+  color: #f00;
+  border: 1px solid #f00;
+}
+form .text-box .alert-icon.corr {
+  opacity: 1;
+  pointer-events: auto;
+  color: #0baa0e;
+  border: 1px solid #0baa0e;
+}
+
+form .text-box i.lock {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+form .text-box .alert-box {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  /* background-color: #292929; */
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: #ff0000;
+  transform: translateX(20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+.text-box .alert-box.show {
+  transform: translateX(0px);
+  opacity: 1;
+  pointer-events: auto;
+}
+form button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 440px;
+  height: 60px;
+  background-color: #3e3c3c;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: #5291ff;
+}
+form button.active {
+  pointer-events: none;
+}
+form button:active {
+  transform: scale(0.99);
+}
+@media screen and (max-width: 1680px) {
+  form .text-box,
+  form button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 795px) {
+  form {
+    width: 80%;
+  }
+}

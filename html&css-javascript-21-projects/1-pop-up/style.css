@@ -1,0 +1,102 @@
+:root 
+{
+    --purple: #4a358e;
+    --btn: #202020;
+    --pop-up: #2c2b2b;
+    --green: #219312;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--purple);
+}
+
+button 
+{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 35px;
+    background-color: var(--btn);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+button:hover 
+{
+    box-shadow: 0 0 0 2px var(--purple),
+                0 0 0 5px #fff;
+}
+.pop-up 
+{
+    position: absolute;
+    width: 500px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color:var(--pop-up);
+    transform: translateY(-50px);
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.pop-up.active 
+{
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: auto;
+}
+.pop-up .close 
+{
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: #f00;
+}
+.pop-up .icon-box
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    color: #fff;
+    font-size: 1.5rem;
+}
+.pop-up .title 
+{
+    font-size: 1.5rem;
+    color: var(--green);
+    text-transform: capitalize;
+
+}
+.pop-up p 
+{
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 1.8em;
+    font-size: 1.2rem;
+}
