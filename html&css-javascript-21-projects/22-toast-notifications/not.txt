@@ -1,0 +1,43 @@
+  <!-- <li style="--clr:#11ae1e;">
+            <i class="fa-solid fa-check icon"></i>
+            <div class="text-box">
+                <span class="title">Congratulations!</span>
+                <p>this is congratulations toast notification</p>
+            </div>
+            <i class="fa-solid fa-xmark remove"></i>
+        </li>
+        <li style="--clr:#383838;">
+            <i class="fa-solid fa-info icon"></i>
+            <div class="text-box">
+                <span class="title">info</span>
+                <p>this is info toast notification</p>
+            </div>
+            <i class="fa-solid fa-xmark remove"></i>
+        </li>
+        <li style="--clr:#ffa200;">
+            <i class="fa-solid fa-exclamation icon"></i>
+            <div class="text-box">
+                <span class="title">alert</span>
+                <p>this is alert toast notification</p>
+            </div>
+            <i class="fa-solid fa-xmark remove"></i>
+        </li>
+        <li style="--clr:#f00;">
+            <i class="fa-solid fa-triangle-exclamation icon"></i>
+            <div class="text-box">
+                <span class="title">error</span>
+                <p>this is error toast notification</p>
+            </div>
+            <i class="fa-solid fa-xmark remove"></i>
+        </li> -->
+
+
+
+
+
+        
+        <!-- <button type="button" class="congratulations" style="--clr:#11ae1e;">congratulations</button>
+        <button type="button" class="info" style="--clr:#383838;">info</button>
+        <button type="button" class="alert" style="--clr:#ffa200;">alert</button>
+        <button type="button" class="error" style="--clr:#f00;">error</button> -->
+    
